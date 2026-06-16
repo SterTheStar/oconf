@@ -1,12 +1,12 @@
+<div align="center">
+
 # OConf
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PySide6](https://img.shields.io/badge/PySide6-6.6%2B-41CD52?logo=qt&logoColor=white)](https://doc.qt.io/qtforpython/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-<p align="center">
-  <img src="icons/icon.png" alt="OConf logo" width="128" />
-</p>
+</div>
 
 <p align="center">
   OpenCode configuration manager with a polished Qt interface for editing `~/.config/opencode/opencode.jsonc`.
