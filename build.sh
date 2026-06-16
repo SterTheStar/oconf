@@ -19,7 +19,7 @@ sed "s/__VERSION__/${VERSION}/g" "$ROOT/packaging/oconf.spec" > "$TMP/rpm/SPECS/
 export OCONF_VERSION="$VERSION"
 
 "$ROOT/.venv/bin/pip" install -q pyinstaller
-"$ROOT/.venv/bin/pyinstaller" --noconfirm --clean --name OConf --windowed --icon "$ROOT/icons/icon.png" --add-data "$ROOT/icons/icon.png:icons" "$ROOT/main.py"
+"$ROOT/.venv/bin/pyinstaller" --noconfirm --clean --paths "$ROOT" --name OConf --windowed --icon "$ROOT/icons/icon.png" --add-data "$ROOT/icons/icon.png:icons" "$ROOT/main.py"
 
 cp "$ROOT/packaging/deb/control" "$TMP/deb/DEBIAN/control"
 sed -i "s/^Version: .*/Version: ${VERSION}/" "$TMP/deb/DEBIAN/control"
