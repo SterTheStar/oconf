@@ -225,6 +225,7 @@ class ModelsPanel(QWidget):
         dlg = ModelDialog(model_key=self._selected_model, model=model, parent=self)
         if dlg.exec():
             new_key, updated = dlg.get_model()
+            updated.id = new_key
             if self.model_service.update_model(self._selected_provider, self._selected_model, new_key, updated):
                 self.cm.save()
                 self._load_models()

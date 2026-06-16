@@ -76,7 +76,7 @@ def add_models_from_api(
         if mid in existing_keys:
             result.skipped += 1
             continue
-        provider.models[mid] = ModelConfig(name=mid)
+        provider.models[mid] = ModelConfig(id=mid, name=mid)
         result.added += 1
 
     return result

@@ -200,6 +200,8 @@ class ProvidersPanel(QWidget):
         dlg = ProviderDialog(provider=prov, parent=self)
         if dlg.exec():
             updated = dlg.get_provider()
+            # Preserve existing model configuration when editing provider metadata.
+            updated.models = prov.models
             if self.provider_service.update(self._selected_key, updated):
                 self.cm.save()
                 self.load_data()

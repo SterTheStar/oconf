@@ -352,6 +352,7 @@ class ModelDialog(QDialog):
             modalities["output"] = [s.strip() for s in out_mod.split(",") if s.strip()]
 
         return self.key_edit.text().strip(), ModelConfig(
+            id=self.key_edit.text().strip(),
             name=self.name_edit.text().strip(),
             family=self.family_edit.text().strip(),
             release_date=self.release_date_edit.text().strip(),
