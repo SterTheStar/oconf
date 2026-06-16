@@ -9,7 +9,7 @@
 </div>
 
 <p align="center">
-  OpenCode configuration manager with a polished Qt interface for editing `~/.config/opencode/opencode.jsonc`.
+  OpenCode config manager with a polished Qt interface.
 </p>
 
 ## Overview
