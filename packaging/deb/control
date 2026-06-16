@@ -1,0 +1,9 @@
+Package: oconf
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: esther <esthergg@atomicmail.io>
+Description: OpenCode configuration manager
+ OConf is a Qt-based configuration manager for OpenCode.
+Homepage: https://github.com/SterTheStar/oconf

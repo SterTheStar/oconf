@@ -24,7 +24,16 @@ htmlcov/
 # Packaging / build artifacts
 build/
 dist/
+dist-packages/
 site/
+OConf.spec
+oconf-*.tar.gz
+oconf-*.tar.gz
+*.deb
+*.rpm
+*.spec
+packaging/*.spec
+packaging/*.desktop
 
 # IDEs and editors
 .idea/
